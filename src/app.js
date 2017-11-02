@@ -7,7 +7,7 @@ const svg = d3.select('svg'),
 
 d3.csv('data/tweets_local_results.csv', (error, twitter) => {
   // returns array of tweets
-  console.log(twitter);
+
   const dumbTweets = twitter.map(tweet => tweet.tweets);
   const needsABarOfSoap = dumbTweets[getRandom(0, dumbTweets.length - 1)];
   
