@@ -5,9 +5,8 @@ const svg = d3.select('svg'),
   height = +svg.attr('height'),
   g = svg.append('g').attr('transform', 'translate(18,' + height / 4 + ')');
 
-d3.csv('data/tweets_local_results.csv', (error, twitter) => {
+d3.csv('data/tweets_local_results.csv', (error, twitter) => { //catch error
   // returns array of tweets
-
   const dumbTweets = twitter.map(tweet => tweet.tweets);
   const needsABarOfSoap = dumbTweets[getRandom(0, dumbTweets.length - 1)];
   
@@ -59,7 +58,7 @@ d3.csv('data/tweets_local_results.csv', (error, twitter) => {
   d3.interval(function() {
     update(dumbTweets[getRandom(0, dumbTweets.length - 1)]);
   }, 7500);
-});
+}).catch(;
 
 // function getRandom(floor, ceiling) {
 //   return Math.floor(Math.random() * (ceiling - floor + 1)) + floor;
