@@ -10,5 +10,12 @@ This projects takes tweets scraped from a Washington Post article and applies th
 
 I used the obsolete marquee tag to allow the tweet to scroll across the screen from right to left. The marquee tags names to the title ofthe projects name.
 
+- [d3.transition()](https://github.com/d3/d3-transition#transition)
+- [selection.transition()](https://github.com/d3/d3-transition#selection_transition)
+- [transition.duration()](https://github.com/d3/d3-transition#transition_duration)
+- [transition.delay()](https://github.com/d3/d3-transition#transition_delay)
+- [transition.style()](https://github.com/d3/d3-transition#transition_style)
+- [transition.attr()](https://github.com/d3/d3-transition#transition_attr)
 
 more to come latter A project
+[ ] - add a gif of project in action
