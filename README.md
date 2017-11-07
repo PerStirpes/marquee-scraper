@@ -1,6 +1,7 @@
 # marquee-scraper
 
 ## Animate the D3 General Update Pattern
+### Web Scraping and Data Visualization
 
 The D3 General Update Pattern describes what happens when a data join is followed by operations on the enter, update, and exit selections. When a visualizations data changes over time and each update can both create new elements and destroy existing ones, the General Update pattern helps convey meaning to users. 
 
@@ -10,6 +11,14 @@ This projects takes tweets scraped from a Washington Post article and applies th
 
 I used the obsolete marquee tag to allow the tweet to scroll across the screen from right to left. The marquee tags names to the title ofthe projects name.
 
+
+Uses Python to scrape a washington post article that had a 100 days of tweets from one individual. 
+visualize tweet using D3 general pattern. 
+
+
+
+
+---
 - [d3.transition()](https://github.com/d3/d3-transition#transition)
 - [selection.transition()](https://github.com/d3/d3-transition#selection_transition)
 - [transition.duration()](https://github.com/d3/d3-transition#transition_duration)
