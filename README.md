@@ -21,4 +21,4 @@ more to come latter A project
 
 - [ ]  add a gif of project in action
 - [ ] expand on the details of the project
-- [ ] 
+- [ ] write about scraping with python
