@@ -19,4 +19,4 @@ I used the obsolete marquee tag to allow the tweet to scroll across the screen f
 
 more to come latter A project
 
-- [ ]- add a gif of project in action
+[ ] - add a gif of project in action
