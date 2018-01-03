@@ -1,6 +1,6 @@
 {
   "main": "src/app.js",
   "scripts": {
-    "start": "src/app.js"
+    "start": "node src/app.js"
   }
 }
