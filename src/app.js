@@ -1,5 +1,3 @@
-import { getRandom } from './utls/generateRandNumber'; //works with chrome 61
-
 const svg = d3.select('svg'),
   width = +svg.attr('width'),
   height = +svg.attr('height'),
@@ -8,16 +6,6 @@ const svg = d3.select('svg'),
 d3.csv('data/tweets_local_results.csv', (error, twitter) => { //catch error
   // returns array of tweets
   const dumbTweets = twitter.map(tweet => tweet.tweets);
-  const needsABarOfSoap = dumbTweets[getRandom(0, dumbTweets.length - 1)];
-  
-  // returns keyed object
-  const copy = twitter.map(d => {
-    return {
-      date: d.date,
-      time: d.time,
-      tweet: d.tweets
-    };
-  });
 
   function update(data) {
     const t = d3.transition().duration(5000);
@@ -58,8 +46,8 @@ d3.csv('data/tweets_local_results.csv', (error, twitter) => { //catch error
   d3.interval(function() {
     update(dumbTweets[getRandom(0, dumbTweets.length - 1)]);
   }, 7500);
-}).catch(;
+});
 
-// function getRandom(floor, ceiling) {
-//   return Math.floor(Math.random() * (ceiling - floor + 1)) + floor;
-// }
+function getRandom(floor, ceiling) {
+  return Math.floor(Math.random() * (ceiling - floor + 1)) + floor;
+}

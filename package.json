@@ -1,6 +1,6 @@
 {
   "main": "src/app.js",
   "scripts": {
-    "start": "now"
+    "start": "src/app.js"
   }
 }
